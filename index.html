@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Show_Clirien | Accueil</title>
     <meta name="description" content="Site officiel de l'association Les Show_Clirien à Avesnelles. Spectacles, humour, chant, danse, musique et théâtre. Rejoignez-nous !">
+    <meta name="theme-color" content="#0B0F1A">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Les Show_Clirien | Accueil">
@@ -12,8 +13,12 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
 
-    <link rel="icon" href="assets/favicon/favicon.png">
+    <link rel="icon" href="assets/favicon/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
@@ -24,7 +29,7 @@
         <div class="container header-container">
             <div class="logo-area">
                 <a href="index.html" class="logo-link">
-                    <img src="assets/favicon/favicon.png" alt="Logo de l'association Les Show_Clirien">
+                    <img src="assets/favicon/favicon.png" alt="">
                     <div>
                         <span class="brand-name">Les Show_Clirien</span>
                         <span class="slogan">Site officiel de l'association Les Show_Clirien</span>
@@ -32,13 +37,13 @@
                 </a>
             </div>
 
-            <button class="burger-menu" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="main-nav">
+            <button type="button" class="burger-menu" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="main-nav">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </button>
 
-            <nav id="main-nav">
+            <nav id="main-nav" aria-label="Navigation principale">
                 <ul>
                     <li><a href="index.html" class="nav-link" aria-current="page">Accueil</a></li>
                     <li><a href="journal.html" class="nav-link">Le Journal</a></li>
@@ -70,7 +75,7 @@
                         <p>Notre objectif est de créer une scène inclusive et dynamique où chaque passionné peut s'exprimer, tout en menant des actions de solidarité au sein de notre territoire.</p>
                     </div>
                     <div class="about-image">
-                        <img src="assets/images/equipe.png" alt="Photo de l'équipe Les Show_Clirien" class="team-photo-img">
+                        <img src="assets/images/equipe.png" alt="L'équipe Les Show_Clirien réunie sur scène" class="team-photo-img" width="800" height="600">
                     </div>
                 </div>
             </div>
@@ -114,10 +119,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/favicon/favicon.png" alt="Logo de l'association Les Show_Clirien">
+                    <img src="assets/favicon/favicon.png" alt="">
                     <p>Association de spectacle vivant</p>
                 </div>
-                <div class="footer-nav">
+                <nav class="footer-nav" aria-label="Navigation pied de page">
                     <h2>Navigation</h2>
                     <ul>
                         <li><a href="index.html" aria-current="page">Accueil</a></li>
@@ -125,15 +130,15 @@
                         <li><a href="inscription.html">Inscription</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div class="footer-social">
                     <h2>Suivez-nous</h2>
                     <div class="social-links">
                         <!-- MODIFIER ICI : liens vers vos réseaux -->
-                        <a href="https://www.instagram.com/showclirien/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
-                        <!-- <a href="https://tiktok.com/@votre_compte" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TK</a> -->
-                        <a href="https://www.youtube.com/channel/UCG6TcSxezVTCTF-gIoSHvsw" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
-                        <a href="https://www.facebook.com/profile.php?id=61594529327046" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+                        <a href="https://instagram.com/votre_compte" target="_blank" rel="noopener noreferrer" aria-label="Instagram (nouvelle fenêtre)">IG</a>
+                        <a href="https://tiktok.com/@votre_compte" target="_blank" rel="noopener noreferrer" aria-label="TikTok (nouvelle fenêtre)">TK</a>
+                        <a href="https://youtube.com/@votre_compte" target="_blank" rel="noopener noreferrer" aria-label="YouTube (nouvelle fenêtre)">YT</a>
+                        <a href="https://facebook.com/votre_compte" target="_blank" rel="noopener noreferrer" aria-label="Facebook (nouvelle fenêtre)">FB</a>
                     </div>
                 </div>
             </div>
@@ -143,6 +148,5 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
 </body>
 </html>
